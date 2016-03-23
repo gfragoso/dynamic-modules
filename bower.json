@@ -1,0 +1,32 @@
+{
+  "name": "poc-host",
+  "authors": [
+    "Gustavo Fragoso <gustavo.fragoso@fcamara.com.br>"
+  ],
+  "description": "poc para host web",
+  "main": "app.js",
+  "moduleType": [
+    "es6"
+  ],
+  "keywords": [
+    "host",
+    "poc"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "angular-ui-router": "^0.2.18",
+    "angular": "^1.5.2",
+    "oclazyload": "^1.0.9",
+    "lodash": "^4.6.1"
+  }
+}
