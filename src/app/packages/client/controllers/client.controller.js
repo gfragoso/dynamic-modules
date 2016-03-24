@@ -19,7 +19,7 @@
             displayName: "clients",
             views: {
               'main': {
-                templateUrl: 'packages/lxClient/templates/client.template.html',
+                templateUrl: 'packages/client/templates/client.template.html',
                 controller: 'clientController as vm'
               }
             },

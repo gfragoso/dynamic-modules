@@ -1,12 +1,29 @@
 (function() {
   'use strict';
 
-  function MenuController($scope, $state) {
+  function MenuController($scope, $state, $location, $ocLazyLoad, moduleService) {
     var vm = this;
-    vm.message = "hello word!";
+
+    vm.menu = [];
+    vm.init = init;
+    vm.resolveMenu = resolveMenu;
+
+    function init() {
+      moduleService.getAll()
+        .then(function(modules) {
+          vm.menu = modules;        
+        });
+    };
+
+    function resolveMenu(module) {
+      $ocLazyLoad.load(module)
+        .then(function() {
+          $location.path(module.defaultRoute);
+        });
+    };
   };
 
-  MenuController.$inject = ['$scope', '$state', '$ocLazyLoad'];
+  MenuController.$inject = ['$scope', '$state', '$location', '$ocLazyLoad', 'moduleService'];
 
   angular
     .module('app')

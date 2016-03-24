@@ -19,7 +19,7 @@
             displayName: "sales",
             views: {
               'main': {
-                templateUrl: 'packages/lxSale/templates/sale.template.html',
+                templateUrl: 'packages/sale/templates/sale.template.html',
                 controller: 'saleController as vm'
               }
             },

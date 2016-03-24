@@ -1,4 +1,5 @@
-var api = require('./api');
+var api = require('./api'),
+  db = require('./database/mongoDB');
 
 var config = {
   ip: '127.0.0.1',

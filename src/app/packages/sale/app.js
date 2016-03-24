@@ -8,14 +8,10 @@
           .state('sale', {
             url: "/sale",
             abstract: true,
-            templateUrl: "templates/layoutView.html",
-            controller: function($scope, $state, $ocLazyLoad) {
-
-            }
+            templateUrl: "templates/layout.template.html"
           });
-
-        // $urlRouterProvider.otherwise("client/");
+          
+        $urlRouterProvider.otherwise("sale/sales");
       }
     ]);
-
 })();

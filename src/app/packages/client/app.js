@@ -8,13 +8,10 @@
           .state('client', {
             url: "/client",
             abstract: true,
-            templateUrl: "templates/layoutView.html",
-            controller: function($scope, $state, $ocLazyLoad) {
-
-            }
+            templateUrl: "templates/layout.template.html"
           });
 
-        $urlRouterProvider.otherwise("client/");
+        $urlRouterProvider.otherwise("client/clients");
       }
     ]);
 

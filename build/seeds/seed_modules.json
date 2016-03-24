@@ -1,0 +1,33 @@
+[{
+	"name": "client",
+	"displayName": "cliente",
+	"defaultRoute": "/client/clients",
+	"files": [
+		"/packages/client/app.js",
+		"/packages/client/controllers/client.controller.js"
+	]
+}, {
+	"name": "sale",
+	"displayName": "Venda",
+	"defaultRoute": "/sale/sales",
+	"files": [
+		"/packages/sale/app.js",
+		"/packages/sale/controllers/sale.controller.js"
+	]
+},{
+	"name": "order",
+	"displayName": "Pedido",
+	"defaultRoute": "/order/orders",
+	"files": [
+		"/packages/order/app.js",
+		"/packages/order/controllers/order.controller.js"
+	]
+},{
+	"name": "product",
+	"displayName": "Produto",
+	"defaultRoute": "/product/products",
+	"files": [
+		"/packages/product/app.js",
+		"/packages/product/controllers/product.controller.js"
+	]
+}]

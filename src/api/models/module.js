@@ -1,8 +1,10 @@
-var mongoose = require('./../database/mongoDB');
+var mongoose = require('mongoose');
 
 var schema = mongoose.Schema({
+  files: [],
   name: String,
-  files: []
+  displayName: String,
+  defaultRoute: String
 });
 
 var Module = mongoose.model("module", schema);
